@@ -1,0 +1,123 @@
+/* Page background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #1c1c1c; /* Dark Gray */
+    color: #e0e0e0; /* Light gray text for readability */
+    padding: 40px;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    box-shadow: 0 0 13px rgba(47, 235, 248, 0.1);
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-right: 160px;
+    margin-left: 160px;
+    padding : 20px;
+}
+
+/* Left Section styling */
+.Left-section {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 30%; /* Adjusted width */
+    text-align: center;
+    background-color: #c94343; /* Deep Navy */
+    border-right: 5px solid #052afa; /* Teal border for contrast */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Profile picture styling */
+.Profile-Picture {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #00b5fc;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.Profile-Picture:hover {
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Right Section styling */
+.right-section {
+   width: 70%; /* Adjusted width */
+   padding: 20px;
+   background-color: #484f74; /* Charcoal Gray */
+   color: #ffffff; /* Light gray text */
+   transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Headings */
+
+a {
+    text-decoration: none;
+    color : rgba(241, 241, 241, 0.973);
+}
+
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    text-align: center;
+    color: #01c3f3; /* Dark gray for contrast */
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #01c3f3; /* Slate blue to match left section */
+    padding: 5px;
+    margin: 20px 0 10px;
+    border-bottom: 2px solid #36a9a1; /* Teal underline for emphasis */
+}
+
+/* Skills list */
+ul {
+    list-style-type: disc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Button styling */
+button {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Vibrant Cyan */
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0097a7; /* Darker cyan on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .Left-section, .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
